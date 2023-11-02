@@ -76,6 +76,11 @@ p {
             padding-left: 0;
     }
 
+    .link {
+        text-decoration: none;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
 /* ====header====*/
 
     .header-style {
@@ -102,7 +107,6 @@ p {
         letter-spacing: 0.54px;
         word-wrap: break-word;
         margin-right: 76px;
-        padding: 24px 0;
     }
 
     .studio {
@@ -123,6 +127,13 @@ p {
     .address-container {
         display: none;
 
+    }
+
+    .nav-menu{
+        border: none;
+        background-color: transparent;
+        margin-top: 24px;
+        margin-bottom: 24px;
     }
 
 
@@ -357,20 +368,23 @@ p {
         fill: currentColor;
     }
 
+/*====Portfolio====*/
+
     .portfolio {
         flex-direction: column;
     }
 
     .portfolio-section {
-        padding-top: 96px;
-        padding-bottom: 120px;
+        padding-top: 48px;
+        padding-bottom: 48px;
     }
 
     .button-list {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
         gap: 24px;
-        margin-bottom: 72px;
+        row-gap: 16px;
+        margin-bottom: 48px;
 
     }
 
@@ -479,8 +493,11 @@ p {
     }
     
     .footer-link {
-        display: inline-block;
+        display: block;
+        margin: 0;
         margin-bottom: 16px;
+        text-align: center;
+        
     }
 
     .studio-footer {

@@ -76,7 +76,7 @@ p {
             padding-left: 0;
     }
 
-    /* ====header====*/
+/* ====header====*/
 
     .header-style {
         border-bottom: 1px solid var(--accent);
@@ -84,6 +84,12 @@ p {
             0px 2px 1px rgba(46, 47, 66, 0.08),
             0px 1px 1px rgba(46, 47, 66, 0.16),
             0px 1px 6px rgba(46, 47, 66, 0.08);
+    }
+        
+    .header-container {
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
     }
 
     .logo {
@@ -96,17 +102,11 @@ p {
         letter-spacing: 0.54px;
         word-wrap: break-word;
         margin-right: 76px;
-        padding: 24 px 0;
+        padding: 24px 0;
     }
 
     .studio {
         color: var(--modal-overlay)
-    }
-
-    .header-container {
-        display: flex;
-        align-items: center;
-        padding: 0 15px;
     }
 
     .logo-container {
@@ -117,75 +117,15 @@ p {
     }
 
     .menu-container {
-        display: flex;
-        gap: 40px;
+        display: none;
     }
 
     .address-container {
-        display: flex;
-        align-items: center;
-
-    }
-
-    .address-list {
-        display: flex;
-        gap: 40px;
-    }
-
-    /*style header*/
-
-    .link {
-        text-decoration: none;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .link-nav {
-        font-weight: 500;
-        color: var(--dark);
-        padding: 24px 0;
-        gap: 40px;
-    }
-
-
-    .underline {
-        position: relative;
-        color: var(--pressed-state);
-    }
-
-    .underline::after {
-        content: '';
-        height: 4px;
-        width: 100%;
-        background-color: var(--pressed-state);
-        border-radius: 2px;
-        position: absolute;
-        left: 0;
-        bottom: -1px;
-    }
-
-    .address {
-        color: var(--text);
-        font-size: 16px;
-        font-family: "Roboto", sans-serif;
-        line-height: 1.5;
-        letter-spacing: 0.32px;
-        word-wrap: break-word;
-        font-style: normal;
-        padding: 24px 0;
-        gap: 40px;
+        display: none;
 
     }
 
 
-    .link-adress {
-        color: var(--text);
-        gap: 40px;
-    }
-
-    .link:hover,
-    .link:focus {
-        color: var(--pressed-state);
-    }
 /*====1st section index====*/ 
     .slider {
         background-color: var(--modal-overlay);
@@ -523,10 +463,6 @@ p {
         transform: translateY(0%);
     }
 
-
-
-
-
 /*====Style footer====*/
     .footer {
         color: var(--light);
@@ -536,13 +472,12 @@ p {
     
     .footer-container {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;        
         align-items: baseline;
+        row-gap: 72px;
     }
     
-    .footer-box {
-        margin-right: 120px;
-    }
     .footer-link {
         display: inline-block;
         margin-bottom: 16px;
@@ -557,7 +492,7 @@ p {
         letter-spacing: 0.02em;
         margin: 0;
         flex-wrap: wrap;
-        width: 264px;
+        width: 268px;
 
     }
 
@@ -569,13 +504,14 @@ p {
         line-height: 1.5;
         letter-spacing: 0.32px;
         margin-bottom: 16px;
+        text-align: center;
     }
 
     .footer-ul {
         display: flex;
         gap: 16px;
     }
-
+    
     .icon-social-media-footer {
         display: flex;
         justify-content: center;
@@ -586,14 +522,30 @@ p {
         background-color: var(--primary-brand);
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
+        
     .icon-social-media-footer:hover,
     .icon-social-media-footer:focus {
         background-color: var(--success);
     }
 
-    .footer-form {
-        margin-left: 80px;
+    .newsletter {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    
+    .newsletter-form {
+        width: 398px;
+        height: 40px;
+        background-color: transparent;
+        border: 1px var(--white-background) solid;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        font-size: 12px;
+        line-height: 1.5;
+        color: var(--white-background);
+        letter-spacing: 0.48px;
+        padding-left: 16px;
     }
 
     .button-newsletter {
@@ -632,27 +584,7 @@ p {
         margin-left: 16px;
     }
 
-    .newsletter {
-        display: flex;
-        gap: 24px;
-    }
-
-    .newsletter-form {
-        width: 264px;
-        height: 40px;
-        background-color: transparent;
-        border: 1px var(--white-background) solid;
-        border-radius: 4px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        font-size: 12px;
-        line-height: 1.5;
-        color: var(--white-background);
-        letter-spacing: 0.48px;
-        padding-left: 16px;
-
-    }
-
-    /*modal*/
+/*====modal 1st section====*/
     .backdrop {
         position: fixed;
         inset: 0 0 auto;
@@ -679,11 +611,11 @@ p {
             0px 1px 3px rgba(0, 0, 0, 0.12),
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
-        width: 408px;
+        width: 392px;
         min-height: 584px;
         top: 50%;
         left: 50%;
-        padding: 72px 24px 24px 24px;
+        padding: 72px 16px 16px 24px;
         transform: translate(-50%, -50%);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
     }

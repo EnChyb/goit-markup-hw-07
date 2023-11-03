@@ -21,11 +21,11 @@ font-family: 'Roboto', sans-serif;
         <div class="container header-container"> 
         <nav class="logo-container">
             <a class="logo link" href="/">Web<span class="studio">Studio</span></a>
-                <ul class="list menu-container">
-                    <li><a class="link link-nav underline" href="./index.html">Studio</a></li>
-                    <li><a class="link link-nav" href="./portfolio.html">Portfolio</a></li>
-                    <li><a class="link link-nav" href="">Contacts</a></li>
-                </ul>
+            <ul class="list menu-container">
+                <li><a class="link link-nav underline" href="./index.html">Studio</a></li>
+                <li><a class="link link-nav" href="./portfolio.html">Portfolio</a></li>
+                <li><a class="link link-nav" href="">Contacts</a></li>
+            </ul>
         </nav>
         <address class="address address-container">
                 <ul class="list address-list">
@@ -33,7 +33,7 @@ font-family: 'Roboto', sans-serif;
                     <li><a class="link link-adress" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
         </address>
-        <button type="button" class="nav-menu">
+        <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg width="32" height="22">
                 <use href="./images/icons.svg#icon-hamburger"></use>
             </svg>
@@ -415,7 +415,31 @@ font-family: 'Roboto', sans-serif;
             </form>
         </div>
     </div>
-
+    <div>
+        <nav class="logo-container">
+            <a class="logo link" href="/">Web<span class="studio">Studio</span></a>
+            <ul class="list menu-container">
+                <li><a class="link link-nav underline" href="./index.html">Studio</a></li>
+                <li><a class="link link-nav" href="./portfolio.html">Portfolio</a></li>
+                <li><a class="link link-nav" href="">Contacts</a></li>
+            </ul>
+        </nav>
+        <address class="address address-container">
+            <ul class="list address-list">
+                <li><a class="link link-adress" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="link link-adress" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            </ul>
+        </address>
+        <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="32" height="22">
+                <use href="./images/icons.svg#icon-hamburger"></use>
+            </svg>
+        </button>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>   
 </html>

@@ -416,25 +416,54 @@ font-family: 'Roboto', sans-serif;
         </div>
     </div>
     <div class="mobile-menu-container js-menu-container">
-        <button type="button" class="menu-toggle js-close-menu" id="mobile-menu">
-            <svg width="32" height="22">
-                <use href="./images/icons.svg#icon-hamburger"></use>
+        <button type="button" class="close-button-mobile js-close-menu" id="mobile-menu">
+            <svg class="close-button-svg" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
         <nav class="logo-container">
-            <ul class="list menu-container">
-                <li><a class="link link-nav underline" href="./index.html">Studio</a></li>
+            <ul class="list mobile-menu-container-ul">
+                <li><a class="link link-nav active" href="./index.html">Studio</a></li>
                 <li><a class="link link-nav" href="./portfolio.html">Portfolio</a></li>
                 <li><a class="link link-nav" href="">Contacts</a></li>
             </ul>
         </nav>
-        <address class="address address-container">
+        <address class="address address-container-mobile">
             <ul class="list address-list">
+                <li><a class="link tel-link-adress" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 <li><a class="link link-adress" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="link link-adress" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
-
+        <ul class="list social-media">
+            <li class="li-social-media">
+                <a href="" class="icon-social-media">
+                    <svg class="social-media-svg" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="li-social-media">
+                <a href="" class="icon-social-media">
+                    <svg class="social-media-svg" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="li-social-media">
+                <a href="" class="icon-social-media">
+                    <svg class="social-media-svg" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="li-social-media">
+                <a href="" class="icon-social-media">
+                    <svg class="social-media-svg" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
     </div>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
